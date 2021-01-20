@@ -1,0 +1,62 @@
+<div id="mainNavigation" class="primFont">
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <span class="navbar-brand semiBoldFont">VISION CENTER</span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        {% if pageName == 'Home' %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:projects_page' %}"
+            >Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:articles_page' %}"
+            >Articles</a>
+        </li>
+
+        {% elif pageName == 'Projects' %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:home_page' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:articles_page' %}"
+            >Articles</a>
+        </li>
+
+        {% elif pageName == 'Articles' %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:home_page' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:projects_page' %}"
+            >Projects</a>
+        </li>
+
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:home_page' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:projects_page' %}"
+            >Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:articles_page' %}"
+            >Articles</a>
+        </li>
+
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+</div>

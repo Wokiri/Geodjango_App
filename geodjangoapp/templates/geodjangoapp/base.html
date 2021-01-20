@@ -1,0 +1,36 @@
+{% load static %} {% load humanize %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{{ pageName }} | {% endblock %}VISION CENTER</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'geodjangoapp/cssAssets/bootstrapStyling.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'geodjangoapp/cssAssets/geodjangoappStyling.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'geodjangoapp/css/mapStyling.css' %}"
+    />
+  </head>
+
+  <body>
+    <div id="homeWrapper" class="container-fluid primFont">
+      {% include 'geodjangoapp/mainNavigation.html' %} {% block content %} {% endblock %}
+    </div>
+
+    <script src="{% static 'geodjangoapp/jsAssets/bootstrapStyling.js' %}"></script>
+    <script src="{% static 'geodjangoapp/jsAssets/personalsite.js' %}"></script>
+  </body>
+
+  {% include 'geodjangoapp/footer.html' %}
+</html>

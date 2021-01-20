@@ -1,0 +1,1 @@
+import "../css/geodjangoappStyling.css"; // scss, css

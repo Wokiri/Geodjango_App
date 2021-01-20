@@ -1,0 +1,7 @@
+<form method="POST">
+    {% csrf_token %}
+    {{ inquiry_form.as_p }}
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-light pt-2 pb-2 pl-5 pr-5">Inquire</button>
+    </div>
+</form>
