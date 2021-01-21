@@ -60,7 +60,8 @@ module.exports = {
             // Using file-loader
             loader: "file-loader",
             options: {
-              name: "[name].[fullhash].[ext]",
+              //name: "[name].[fullhash].[ext]",
+			  name: "[name].[ext]",
               outputPath: "fontsAssets/",
             },
           },

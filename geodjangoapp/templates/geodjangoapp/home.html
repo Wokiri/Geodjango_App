@@ -4,35 +4,8 @@
   <h1 class="text-info font-weight-bold text-center tertiaryFont mt-5">
     VISION CENTER KENYA
   </h1>
-</div>
 
-<div
-  id="servicesDiv"
-  class="container p-md-4 p-sm-2 d-flex flex-column justify-content-center text-center"
->
-  {% for service in services %}
-  <div class="serviceSections m-0 p-5">
-    <div class="">
-      <div class="">
-        <h1 class="">{{ service.title }}</h1>
-      </div>
-
-      <div class="largerFontSize">
-        {% autoescape off %} {{ service.details }} {% endautoescape %}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
-<div id="form_inspirationDiv" class="container-fluid">
-  <div id="formDiv" class="container pb-4 rounded-bottom">
-    {% include 'geodjangoapp/enquiryForm.html' %}
-  </div>
-
-  <div id="inspirationDiv" class="container rounded mt-0 mb-5 p-5 text-justify">
-    {% include 'geodjangoapp/inspiration.html' %}
-  </div>
+  <p class="lead text-center mt-0">for a collective prosperity</p>
 </div>
 
 {% endblock %}

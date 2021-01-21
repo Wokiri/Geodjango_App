@@ -1,6 +1,6 @@
 @font-face {
   font-family: "BarlowSemiCondensed-ExtraBold";
-  src: url("../fonts/BarlowSemiCondensed-ExtraBold.woff2") format("woff2"), url("../fonts/BarlowSemiCondensed-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/BarlowSemiCondensed-ExtraBold.woff2") format("woff2"), url("../fontsAssets/BarlowSemiCondensed-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "BarlowSemiCondensed-Regular";
-  src: url("../fonts/BarlowSemiCondensed-Regular.woff2") format("woff2"), url("../fonts/BarlowSemiCondensed-Regular.woff") format("woff");
+  src: url("../fontsAssets/BarlowSemiCondensed-Regular.woff2") format("woff2"), url("../fontsAssets/BarlowSemiCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "BarlowSemiCondensed-Thin";
-  src: url("../fonts/BarlowSemiCondensed-Thin.woff2") format("woff2"), url("../fonts/BarlowSemiCondensed-Thin.woff") format("woff");
+  src: url("../fontsAssets/BarlowSemiCondensed-Thin.woff2") format("woff2"), url("../fontsAssets/BarlowSemiCondensed-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "ComicNeue-Regular";
-  src: url("../fonts/ComicNeue-Regular.woff2") format("woff2"), url("../fonts/ComicNeue-Regular.woff") format("woff");
+  src: url("../fontsAssets/ComicNeue-Regular.woff2") format("woff2"), url("../fontsAssets/ComicNeue-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "FiraSansCondensed-ExtraBold";
-  src: url("../fonts/FiraSansCondensed-ExtraBold.woff2") format("woff2"), url("../fonts/FiraSansCondensed-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/FiraSansCondensed-ExtraBold.woff2") format("woff2"), url("../fontsAssets/FiraSansCondensed-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: "FiraSansCondensed-Regular";
-  src: url("../fonts/FiraSansCondensed-Regular.woff2") format("woff2"), url("../fonts/FiraSansCondensed-Regular.woff") format("woff");
+  src: url("../fontsAssets/FiraSansCondensed-Regular.woff2") format("woff2"), url("../fontsAssets/FiraSansCondensed-Regular.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: "FiraSansCondensed-Thin";
-  src: url("../fonts/FiraSansCondensed-Thin.woff2") format("woff2"), url("../fonts/FiraSansCondensed-Thin.woff") format("woff");
+  src: url("../fontsAssets/FiraSansCondensed-Thin.woff2") format("woff2"), url("../fontsAssets/FiraSansCondensed-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: "IndieFlower";
-  src: url("../fonts/IndieFlower.woff2") format("woff2"), url("../fonts/IndieFlower.woff") format("woff");
+  src: url("../fontsAssets/IndieFlower.woff2") format("woff2"), url("../fontsAssets/IndieFlower.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: "RobotoSlab-Regular";
-  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  src: url("../fontsAssets/RobotoSlab-Regular.woff2") format("woff2"), url("../fontsAssets/RobotoSlab-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: "RobotoSlab-ExtraBold";
-  src: url("../fonts/RobotoSlab-ExtraBold.woff2") format("woff2"), url("../fonts/RobotoSlab-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/RobotoSlab-ExtraBold.woff2") format("woff2"), url("../fontsAssets/RobotoSlab-ExtraBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: "RobotoSlab-Thin";
-  src: url("../fonts/RobotoSlab-Thin.woff2") format("woff2"), url("../fonts/RobotoSlab-Thin.woff") format("woff");
+  src: url("../fontsAssets/RobotoSlab-Thin.woff2") format("woff2"), url("../fontsAssets/RobotoSlab-Thin.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: "Signika-Regular";
-  src: url("../fonts/Signika-Regular.woff2") format("woff2"), url("../fonts/Signika-Regular.woff") format("woff");
+  src: url("../fontsAssets/Signika-Regular.woff2") format("woff2"), url("../fontsAssets/Signika-Regular.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -96,7 +96,7 @@
 
 @font-face {
   font-family: "Sniglet-ExtraBold";
-  src: url("../fonts/Sniglet-ExtraBold.woff2") format("woff2"), url("../fonts/Sniglet-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/Sniglet-ExtraBold.woff2") format("woff2"), url("../fontsAssets/Sniglet-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -104,7 +104,7 @@
 
 @font-face {
   font-family: "Sniglet-Regular";
-  src: url("../fonts/Sniglet-Regular.woff2") format("woff2"), url("../fonts/Sniglet-Regular.woff") format("woff");
+  src: url("../fontsAssets/Sniglet-Regular.woff2") format("woff2"), url("../fontsAssets/Sniglet-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: "SONGERCondensed-ExtraBold";
-  src: url("../fonts/SONGERCondensed-ExtraBold.woff2") format("woff2"), url("../fonts/SONGERCondensed-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/SONGERCondensed-ExtraBold.woff2") format("woff2"), url("../fontsAssets/SONGERCondensed-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -120,7 +120,7 @@
 
 @font-face {
   font-family: "SONGERCondensed";
-  src: url("../fonts/SONGERCondensed.woff2") format("woff2"), url("../fonts/SONGERCondensed.woff") format("woff");
+  src: url("../fontsAssets/SONGERCondensed.woff2") format("woff2"), url("../fontsAssets/SONGERCondensed.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -128,7 +128,7 @@
 
 @font-face {
   font-family: "SONGERGrotesque-ExtraBold";
-  src: url("../fonts/SONGERGrotesque-ExtraBold.woff2") format("woff2"), url("../fonts/SONGERGrotesque-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/SONGERGrotesque-ExtraBold.woff2") format("woff2"), url("../fontsAssets/SONGERGrotesque-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -136,7 +136,7 @@
 
 @font-face {
   font-family: "SONGERGrotesque";
-  src: url("../fonts/SONGERGrotesque.woff2") format("woff2"), url("../fonts/SONGERGrotesque.woff") format("woff");
+  src: url("../fontsAssets/SONGERGrotesque.woff2") format("woff2"), url("../fontsAssets/SONGERGrotesque.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -144,7 +144,7 @@
 
 @font-face {
   font-family: "SONGERSemiExpanded-ExtraBold";
-  src: url("../fonts/SONGERSemiExpanded-ExtraBold.woff2") format("woff2"), url("../fonts/SONGERSemiExpanded-ExtraBold.woff") format("woff");
+  src: url("../fontsAssets/SONGERSemiExpanded-ExtraBold.woff2") format("woff2"), url("../fontsAssets/SONGERSemiExpanded-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -255,5 +255,10 @@ body {
 }
 
 body #homeWrapper {
-  min-height: 80vh;
+  min-height: 60vh;
+  width: 100%;
+}
+
+body #homeWrapper #mainNavigation {
+  width: 100%;
 }

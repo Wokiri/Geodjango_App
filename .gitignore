@@ -13,6 +13,8 @@ jspm_packages/
 
 *prod
 
+*src/fonts
+
 # Logs
 logs
 *.log

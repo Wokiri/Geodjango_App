@@ -23,6 +23,12 @@ body {
   color: $darkPrimaryColor;
 
   #homeWrapper {
-    min-height: 80vh;
+    min-height: 60vh;
+    width: 100%;
+
+
+    #mainNavigation{
+      width: 100%;
+    }
   }
 }
