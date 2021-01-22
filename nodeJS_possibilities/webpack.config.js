@@ -8,8 +8,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     bootstrapStyling: "./src/js/bootstrapStyling.js",
-    outlookStyling: "./src/js/appStyling.js",
-    personalsite: "./src/js/appMain.js",
+    appStyling: "./src/js/appStyling.js",
+    appMain: "./src/js/appMain.js",
+    appMap: "./src/js/appMap.js",
   },
   output: {
     publicPath: "",
@@ -92,7 +93,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     // new MiniCssExtractPlugin({ filename: "[name].[fullhash].css" }),
-    new MiniCssExtractPlugin({ filename: "cssAssets/[name].css" }),
+    new MiniCssExtractPlugin({ filename: "[name].css" }),
 
     new HtmlWebpackPlugin({
       template: "./src/index.html",

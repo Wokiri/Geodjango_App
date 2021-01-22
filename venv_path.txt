@@ -1,1 +1,0 @@
-../venv386/Scripts/activate

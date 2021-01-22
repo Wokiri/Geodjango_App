@@ -1,0 +1,37 @@
+GEODJANGO INTERVIEW.
+
+
+Kindly attempt all the sections of this question properly commenting your work.
+You have till Sunday to hand in your work by either pushing your code to your github page and sharing it with us (info@onb.co.ke) or hosting it in any platform of your choice.
+
+
+
+
+An NGO has 13 offices distributed all over Kenya, of this offices, 9 offices report to 3 regional offices (3 field offices report to 1 regional office).
+
+The 3 regional offices report to the head office in Nairobi.
+
+Information shared include:
+the area of coverage of each field office,
+physical features,
+the number of staff within an office
+and issues the office is  addressing in the area (e.g water, errosion, education, health).
+
+Basically the regional office is made up of a collection of 3 field offices while the head office brings together the regional offices.
+
+
+
+A) Build a location based application with the view of the head office i.e showing all the regional offices (location, issues and number of staff) and field offices (location and number of staff).
+
+(use geodjango and postgresql with any other tool of your choice (e.g leaflet library, reactjs, shape files etc)).
+
+
+B) Make the system interactive (visible boundaries and onclick markers events to show more information).
+
+
+Please note: We are looking for a demonstration of knowledge in the technologies mentioned (geodjango and postgresql).
+
+Considerations will be based on your creativity and skill level.
+
+
+All the best.

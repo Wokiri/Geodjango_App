@@ -1,0 +1,3 @@
+../venv386/Scripts/activate
+
+./geodjangoapp/appassets/Offices.geojson

@@ -13,7 +13,9 @@ jspm_packages/
 
 *prod
 
-*src/fonts
+*src/fontsAssets
+
+*iconsAssets
 
 # Logs
 logs

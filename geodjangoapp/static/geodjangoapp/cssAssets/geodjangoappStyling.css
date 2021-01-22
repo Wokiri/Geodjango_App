@@ -170,6 +170,10 @@
   color: white;
 }
 
+.blackColor {
+  color: black;
+}
+
 .darkPrimaryColor {
   color: #004666;
 }
@@ -184,6 +188,10 @@
 
 .largerFontSize {
   font-size: larger;
+}
+
+.defaultFontSize {
+  font-size: large;
 }
 
 .line {

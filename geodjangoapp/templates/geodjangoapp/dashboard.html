@@ -1,43 +1,6 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | GLOBAL VISION CENTER</title>
-  <body>
-    <div id="homeWrapper" class="primFont">
-      <div id="mainNavigation" class="primFont whiteColor">
-  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-    <span class="navbar-brand tertiaryFont">
-      <i class="bi bi-globe"></i>
-      GlobalVisionCenter (KE)
-    </span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/">Projects</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
- 
-
-<div class="container text-info">
-  <h1 class="font-weight-bold text-center tertiaryFont mt-5">
-    GLOBAL VISION CENTER
-  </h1>
-  <p class="lead text-center mt-0">for a collective prosperity</p>
-</div>
-
 <div class="container largerFontSize text-center mt-4">
     <div class="jumbotron p-1 mb-0">
-        <h1 class="text-center">Head Office Dashboard</h1>      
+        <h1 class="text-center">{{ officeName }} Dashboard</h1>      
         <p>We engage communities, organizations and governments for a collective societal course aimed at shared prosperity</p>
     </div>
 
@@ -56,7 +19,7 @@
                         <a class="dropdown-item" href="#">Regional Offices</a>
                         <a class="dropdown-item" href="#">Field Offices</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/offices/">General Information</a>
+                        <a class="dropdown-item" href="{% url 'geodjangoapp:officesinfo' %}">General Information</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -74,17 +37,3 @@
         </div>
     </nav>
 </div>
-
-<div class="container largerFontSize">
-  <div id="map-container"></div>
-</div>
-
-
-
-    </div>
-  
-
-  <footer>
-</footer>
-
-</body></html>
