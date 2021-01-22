@@ -18,6 +18,12 @@ module.exports = {
     // filename: "jsAssets/[name].[contenthash].js",
     filename: "jsAssets/[name].js",
   },
+  devtool: 'source-map',
+  devServer: {
+    port: 2030,
+    clientLogLevel: 'none',
+    stats: 'errors-only'
+  },
   optimization: {
     minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
   },
@@ -103,6 +109,5 @@ module.exports = {
         removeEmptyAttributes: true,
       },
     }),
-    
   ],
 };

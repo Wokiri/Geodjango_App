@@ -26,6 +26,11 @@
       type="text/css"
       href="{% static 'geodjangoapp/cssAssets/mapStyling.css' %}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'geodjangoapp/cssAssets/appStyling.css' %}"
+    />
   </head>
 
   <body>
@@ -34,8 +39,9 @@
     </div>
 
     <script src="{% static 'geodjangoapp/jsAssets/bootstrapStyling.js' %}"></script>
-    <script src="{% static 'geodjangoapp/jsAssets/personalsite.js' %}"></script>
+    <script src="{% static 'geodjangoapp/jsAssets/appMap.js' %}"></script>
   </body>
 
   {% include 'geodjangoapp/footer.html' %}
+  
 </html>
