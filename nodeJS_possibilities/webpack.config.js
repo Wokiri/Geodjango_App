@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require('webpack')
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -96,6 +97,12 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.NODE_DEBUG': JSON.stringify(process.env.NODE_DEBUG),
+      'process.type': JSON.stringify(process.type),
+      'process.version': JSON.stringify(process.version)
+    }),
     new CleanWebpackPlugin(),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     // new MiniCssExtractPlugin({ filename: "[name].[fullhash].css" }),

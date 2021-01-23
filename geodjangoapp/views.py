@@ -6,6 +6,7 @@ from django.contrib.gis.gdal import OGRGeometry
 
 from django.core.serializers import serialize
 
+
 # Create your views here.
 def home_page(request):
 
@@ -24,7 +25,9 @@ def home_page(request):
         'offices': offices,
         'employees': employees,
         'regions': regions,
-        'officeName': 'Head Office'
+        'officeName': 'Head Office',
+        'offices_json': offices_json,
+        'regions_json': regions_json
     }
 
     return render(request,'geodjangoapp/home.html', context)
