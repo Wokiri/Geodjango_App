@@ -1,0 +1,2 @@
+const kenyaRegionsJson = require('./KenyaRegions.json')
+const kenyaOfficesJson = require('./Offices.json')
