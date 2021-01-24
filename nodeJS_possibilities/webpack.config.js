@@ -10,7 +10,6 @@ module.exports = {
   entry: {
     bootstrapStyling: "./src/js/bootstrapStyling.js",
     appStyling: "./src/js/appStyling.js",
-    appMain: "./src/js/appMain.js",
     appMap: "./src/js/appMap.js",
   },
   output: {

@@ -5,6 +5,10 @@
   background-color: #04041b;
 }
 
+#popup {
+  display: none;
+}
+
 .ol-popup {
   position: absolute;
   background-color: #fff;
