@@ -16,12 +16,15 @@
                         Offices
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Head Office</a>
-                        <a class="dropdown-item" href="#">Regional Offices</a>
-                        <a class="dropdown-item" href="#">Field Offices</a>
+                        <a class="dropdown-item" href="{% url 'geodjangoapp:officedetailpage' 13 %}">Head Office</a>
+                        <a class="dropdown-item" href="{% url 'geodjangoapp:regionalspage' %}">Regional Offices</a>
+                        <a class="dropdown-item" href="{% url 'geodjangoapp:fieldspage' %}">Field Offices</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{% url 'geodjangoapp:officespage' %}">General Information</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'geodjangoapp:regionspage' %}">Regions</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Projects</a>

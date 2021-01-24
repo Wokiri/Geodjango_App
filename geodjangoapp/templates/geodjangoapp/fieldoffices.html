@@ -1,4 +1,17 @@
 {% extends 'geodjangoapp/base.html' %} {% block content %}
 
+<div class="container text-info">
+  <h1 class="font-weight-bold text-center tertiaryFont mt-5">FIELD OFFICES</h1>
+  <h5 class="lead text-center mt-0">Vision Center Kenya <small>for a collective prosperity</small></h5>
+</div>
+
+<div class="container mb-2">
+    <h2 class="text-center">The {{ offices|length }} Global Vision Field Offices in Kenya are:</h2>
+    <div class="list-group">
+        {% for office in offices %}
+            <a href="{% url 'geodjangoapp:officedetailpage' office.id %}" class="list-group-item list-group-item-action">{{ office }}</a>
+        {% endfor %}
+    </div>
+</div>
 
 {% endblock %}

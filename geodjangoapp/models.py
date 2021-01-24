@@ -48,7 +48,7 @@ class Office(models.Model):
     )
 
     category = models.CharField(default='field', max_length=20, choices=Office_Category)
-    issue = models.ManyToManyField(Issue, blank=True)
+    issues = models.ManyToManyField(Issue, blank=True)
     name = models.CharField(max_length=100)
     geom = models.MultiPointField(srid=4326)
 
