@@ -51,6 +51,9 @@ class Office(models.Model):
     issue = models.ManyToManyField(Issue, blank=True)
     name = models.CharField(max_length=100)
     geom = models.MultiPointField(srid=4326)
+
+    class Meta:
+        pass
     
     def __str__(self):
         return self.name

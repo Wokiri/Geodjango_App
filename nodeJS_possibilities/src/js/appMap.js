@@ -8,6 +8,7 @@ import { Circle as CircleStyle, Style, Fill, Text, Stroke } from "ol/style";
 import Select from "ol/interaction/Select";
 import Overlay from "ol/Overlay";
 
+// These two json files were used for testing during dev mode. The actual app fetches these from a database
 // const kenyaRegionsJson = require("./KenyaRegions.json");
 // const kenyaOfficesJson = require("./Offices.json");
 

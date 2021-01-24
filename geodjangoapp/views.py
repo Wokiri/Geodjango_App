@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 
 from .models import Issue, Office, Employee, Region
 
@@ -36,9 +36,31 @@ def home_page(request):
 def offices_page(request):
 
     pagename = 'Offices'
+    offices = Office.objects.all()
 
     context = {
         'pageName': pagename,
+        'offices': offices
     }
 
-    return render(request,'geodjangoapp/officesinfo.html', context)
+    return render(request,'geodjangoapp/officespage.html', context)
+
+
+def office_detail_page(request, office_id):
+
+    pagename = 'Office Info'
+    office = get_object_or_404(Office, pk=office_id)
+    employees = Employee.objects.all().filter(office=office)
+    regions = Region.objects.all()
+
+
+    officeWKT = office.geom.wkt
+    officeGEOM = OGRGeometry(officeWKT)
+
+    context = {
+        'pageName': pagename,
+        'office': office,
+        'employees': employees
+    }
+
+    return render(request,'geodjangoapp/officedetail.html', context)

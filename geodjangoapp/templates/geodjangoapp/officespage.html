@@ -21,9 +21,20 @@
       <li class="list-group-item">Issues the office is  addressing in the area</li>
     </ul>
     <p>
-      <span>Basically,</span> the regional office is made up of a collection of 3 field offices.
-      the head office brings together the regional offices.
+      <span>Basically,</span> the regional office is made up of  of 3 field offices.
+      The head office brings together the three regional offices.
     </p>
+
+    <ul class="nav flex-column">
+      {% for office in offices %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'geodjangoapp:officedetailpage' office.id %}">{{ forloop.counter }}. {{ office }} Office</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+
+    
   </div>
 </div>
 
