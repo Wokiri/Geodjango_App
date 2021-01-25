@@ -1,0 +1,17 @@
+{% extends 'geodjangoapp/base.html' %} {% block content %}
+
+<div class="container text-info">
+  <h1 class="font-weight-bold text-center tertiaryFont mt-5">{{ employee.name }}</h1>
+  <h5 class="lead text-center mt-0">Global Vision Center <small>for a collective prosperity</small></h5>
+</div>
+
+<div class="container mb-2">
+    <h2 class="text-center">{{ employee.name }} is based in:</h2>
+    <div class="list-group">
+        <a href="{% url 'geodjangoapp:officedetailpage' employee.office.id %}" class="list-group-item list-group-item-action">
+            {{ employee.office }}
+        </a>
+    </div>
+</div>
+
+{% endblock %}

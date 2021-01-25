@@ -33,6 +33,23 @@
       </tr>
       {% endfor %}
     </table>
+
+    {% if issues %}
+    <div class="container mb-4">
+      <h2>Issues Dealt With</h2>
+      {% for issue in issues %}
+        <ul class="list-group">
+          <li class="list-group-item">{{ issue }}</li>
+        </ul>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    
+
+    
+
+    
   </div>
   
 

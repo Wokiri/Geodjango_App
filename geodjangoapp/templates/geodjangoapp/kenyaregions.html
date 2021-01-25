@@ -6,11 +6,13 @@
 </div>
 
 <div class="container mb-2">
-    <h2 class="text-center">The {{ num_features }} Regions in Kenya are:</h2>
+    <h2 class="text-center">The {{ regions|length }} Regions in Kenya are:</h2>
     <div class="list-group defaultFontSize">
-        {% for region in the_regions %}
-            <a href="" class="list-group-item list-group-item-action">{{ region }}</a>
-        {% endfor %}
+        {% for region in regions %}
+            <a href="{% url 'geodjangoapp:regiondetailpage' region.id %}" class="list-group-item list-group-item-action">
+                {{ forloop.counter }}. {{ region.region }}
+            </a>
+        {% endfor %} 
     </div>
 </div>
 

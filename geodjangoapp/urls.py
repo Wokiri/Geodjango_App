@@ -7,7 +7,9 @@ from .views import (
     regionaloffices_page,
     fieldoffices_page,
     regions_view,
-    region_detail_view
+    region_detail_view,
+    employees_view,
+    employee_detail_view
     )
 
 app_name = 'geodjangoapp'
@@ -19,5 +21,7 @@ urlpatterns = [
     path('office/regionaloffices/', regionaloffices_page, name='regionalspage'),
     path('office/fieldoffices/', fieldoffices_page, name='fieldspage'),
     path('kenyaregions/', regions_view, name='regionspage'),
-    path('kenyaregions/easternregion/', region_detail_view, name='regiondetailspage'),
+    path('kenyaregion/<int:regId>/', region_detail_view, name='regiondetailpage'),
+    path('employees/', employees_view, name='employeespage'),
+    path('employee/<int:employee_id>/', employee_detail_view, name='employeedetailpage'),
 ]

@@ -11,6 +11,7 @@ from .models import (
 from django.contrib.gis.gdal import OGRGeometry
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.gdal import DataSource
+from django.contrib.gis.measure import Area
 
 from django.core.serializers import serialize
 
@@ -59,11 +60,13 @@ def office_detail_page(request, office_id):
     pagename = 'Office Info'
     office = get_object_or_404(Office, pk=office_id)
     employees = Employee.objects.all().filter(office=office)
+    issues = Issue.objects.all()
 
     context = {
         'pageName': pagename,
         'office': office,
-        'employees': employees
+        'employees': employees,
+        'issues': issues
     }
 
     return render(request,'geodjangoapp/officedetail.html', context)
@@ -97,37 +100,75 @@ def fieldoffices_page(request):
     return render(request,'geodjangoapp/fieldoffices.html', context)
 
 
-pathRegions = os.path.join(os.getcwd(), 'geodjangoapp', 'appassets', 'KenyaRegions.geojson')
-regionsDS = DataSource(pathRegions)
-regions_layer = regionsDS[0]
+# pathRegions = os.path.join(os.getcwd(), 'geodjangoapp', 'appassets', 'KenyaRegions.geojson')
+# regionsDS = DataSource(pathRegions)
+# regions_layer = regionsDS[0]
 
 def regions_view(request):
+
     pagename = 'Regions'
-    num_features = len(regions_layer)
-
-    the_regions = []
-    for layer in regions_layer:
-        the_regions.append(f"{layer.get('id')}. {layer.get('Region')}")
-
+    regions = Region.objects.all()
+    
     context = {
         'pageName': pagename,
-        'num_features': num_features,
-        'the_regions': the_regions
+        'regions': regions
     }
 
     return render(request,'geodjangoapp/kenyaregions.html', context)
 
 
-def region_detail_view(request, reg_id):
+def region_detail_view(request, regId):
 
-    the_region = ''
-    for layer in regions_layer:
-        the_region = layer.get('Region')
+    region = get_object_or_404(Region, pk=regId)
+    pagename = region.region
+    region_geom = region.geom
+    region_wkt = region_geom.wkt
+    regionOGR = OGRGeometry(region_wkt)
 
-    pagename = 'Regions Detail'
+    alloffices = Office.objects.all()
+    offices_in_region = []
+    for office in alloffices:
+        print(office.id)
+        officeOGR = OGRGeometry(office.geom.wkt)
+        if (regionOGR.intersects(officeOGR)):
+            offices_in_region.append(office)
+
+    
+    area_sq_km = Area(sq_km=region_geom.area)
+
     context = {
         'pageName': pagename,
-        'the_regions': the_region
+        'region': region,
+        'area_sq_km': area_sq_km,
+        'offices_in_region': offices_in_region
     }
 
-    return render(request,'geodjangoapp/kenyaregions.html', context)
+    return render(request,'geodjangoapp/regiondetail.html', context)
+
+
+
+def employees_view(request):
+    
+    pagename = 'Employees'
+    employees = Employee.objects.all()
+    
+    context = {
+        'pagename': pagename,
+        'employees': employees
+    }
+
+    return render(request,'geodjangoapp/employeespage.html', context)
+
+
+
+def employee_detail_view(request, employee_id):
+    
+    employee = get_object_or_404(Employee, pk=employee_id)
+    pagename = employee.name
+    
+    context = {
+        'pagename': pagename,
+        'employee': employee,
+    }
+
+    return render(request,'geodjangoapp/employeedetail.html', context)

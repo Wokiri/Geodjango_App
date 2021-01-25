@@ -1,0 +1,17 @@
+{% extends 'geodjangoapp/base.html' %} {% block content %}
+
+<div class="container text-info">
+  <h1 class="font-weight-bold text-center tertiaryFont mt-5">EMPLOYEES</h1>
+  <h5 class="lead text-center mt-0">Global Vision Center <small>for a collective prosperity</small></h5>
+</div>
+
+<div class="container mb-2">
+    <h2 class="text-center">Global Vision has a total of {{ employees|length }} Employees in Kenya</h2>
+    <div class="list-group">
+        {% for employee in employees %}
+            <a href="{% url 'geodjangoapp:employeedetailpage' employee.id %}" class="list-group-item list-group-item-action">{{ employee }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
